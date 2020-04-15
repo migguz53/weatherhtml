@@ -20,7 +20,7 @@
                     {{time.hour_12}}:{{time.minute}}:{{time.seconds}}
                 </div>
                 <div class="date">
-                    <p>{{time.date}}</p>
+                    {{time.date}}
                 </div>
                 <div class="search">
                     <input placeholder="ZIP Code" v-on:input="zip_trigger" name="name" id="zip" />
@@ -28,12 +28,13 @@
             </div>
         </div>
 
-        <div class="weather_front">
-            <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon">
-            </div>
+        <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon">
             <div class="temp_front degree_symbol">
                 {{current.temp.current}}
             </div>
+        </div>
+
+        <div class="weather_front">
             <div class="location_front">
                 {{city}}, {{location.state}}
             </div>
@@ -44,41 +45,77 @@
 
         <div class="hourly_header"></div>
         <div class="hourly_highlow"></div>
+
         <div class="hourly_forecast">
             <div class="hour">
-                <div class="time1"></div>
-                <div class="hourimg1"></div>
-                <div class="hourtemp1"></div>
+                <div class="time">
+                    {{hourly[1].time}}
+                </div>
+                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                </div>
+                <div class="hourtemp degree_symbol">
+                    {{hourly[1].temperature}}
+                </div>
             </div>
             <div class="hour">
-                <div class="time2"></div>
-                <div class="hourimg2"></div>
-                <div class="hourtemp2"></div>
+                <div class="time">
+                    {{hourly[2].time}}
+                </div>
+                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                </div>
+                <div class="hourtemp degree_symbol">
+                    {{hourly[2].temperature}}
+                </div>
             </div>
             <div class="hour">
-                <div class="time3"></div>
-                <div class="hourimg3"></div>
-                <div class="hourtemp3"></div>
+                <div class="time">
+                    {{hourly[3].time}}
+                </div>
+                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                </div>
+                <div class="hourtemp degree_symbol">
+                    {{hourly[3].temperature}}
+                </div>
             </div>
             <div class="hour">
-                <div class="time4"></div>
-                <div class="hourimg4"></div>
-                <div class="hourtemp4"></div>
+                <div class="time">
+                    {{hourly[4].time}}
+                </div>
+                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                </div>
+                <div class="hourtemp degree_symbol">
+                    {{hourly[4].temperature}}
+                </div>
             </div>
             <div class="hour">
-                <div class="time5"></div>
-                <div class="hourimg5"></div>
-                <div class="hourtemp5"></div>
+                <div class="time">
+                    {{hourly[5].time}}
+                </div>
+                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                </div>
+                <div class="hourtemp degree_symbol">
+                    {{hourly[5].temperature}}
+                </div>
             </div>
             <div class="hour">
-                <div class="time6"></div>
-                <div class="hourimg6"></div>
-                <div class="hourtemp6"></div>
+                <div class="time">
+                    {{hourly[6].time}}
+                </div>
+                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                </div>
+                <div class="hourtemp degree_symbol">
+                    {{hourly[6].temperature}}
+                </div>
             </div>
             <div class="hour">
-                <div class="time7"></div>
-                <div class="hourimg7"></div>
-                <div class="hourtemp7"></div>
+                <div class="time">
+                    {{hourly[7].time}}
+                </div>
+                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                </div>
+                <div class="hourtemp degree_symbol">
+                    {{hourly[7].temperature}}
+                </div>
             </div>
         </div>
 
@@ -159,7 +196,7 @@
             <div class="copyright"></div>
             <div class="about"></div>
         </div>
-
+        
     </div>
 </body>
 </html>
