@@ -11,63 +11,63 @@ img {
   }
   
 .icon_01d {
-    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/01d.png);
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/01d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .icon_02d {
-    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/02d.png);
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/02d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .icon_03d {
-    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/03d.png);
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/03d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .icon_04d {
-    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/04d.png);
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/04d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .icon_09d {
-    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/09d.png);
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/09d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .icon_10d {
-    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/10d.png);
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/10d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .icon_11d {
-    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/11d.png);
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/11d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .icon_13d {
-    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/13d.png);
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/13d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .icon_50d {
-    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/50d.png);
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/50d.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -165,23 +165,27 @@ img {
     margin-top: 100px;
     background-color: black;
     height: 260px;
+    padding-top: 20px;
 }
 
 .time{
-    font-size: 2em;
+    font-size: 3em;
     margin: auto;
     color: white;
+    text-align: center;
 }
 
 .hourtemp{
-    font-size: 2em;
+    font-size: 3em;
     margin: auto;
+    margin-top: 20px;
     color: white;
+    text-align: center;
 }
 
 .icon_hourly{
-    margin: auto;
-    margin-top: 40px;
+    margin-top: 15px;
+    margin-bottom: 25px;
     width: 100%;
-    height: 50px;
+    height: 90px;
 }
