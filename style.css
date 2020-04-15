@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Friendly Schoolmates', serif;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+.icon_01d {
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/01d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_02d {
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/02d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_03d {
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/03d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_04d {
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/04d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_09d {
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/09d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_10d {
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/10d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_11d {
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/11d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_13d {
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/13d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_50d {
+    background-image: url(https://raw.githubusercontent.com/migguz53/weatherhtml/master/50d.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.degree_symbol:not(:empty)::after {
+    content: "°";
+}
+
+.header{
+    margin: auto;
+    padding: 20px;
+    background-color: yellow;
+}
+
+.banner{
+    margin: auto;
+    padding: 0;
+    background-color: lightskyblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.time{
+    margin: auto;
+    font-size: 2em;
+}
+
+.date{
+    margin: auto;
+    font-size: 2em;
+}
+
+.search{
+    margin: auto;
+    font-size: 2em;
+}
+
+.weather_front{
+    margin: auto;
+    padding: 0;
+}
+
+.icon {
+    width: 75%;
+    height: 250px;
+    position: absolute;
+    top: 150px;
+    left: -110px;
+}
+
+.temp_front{
+    font-size: 12em;
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 625px;
+    letter-spacing: 0px;
+}
+
+.location_front{
+    font-size: 8em;
+    position: absolute;
+    text-align: right;
+    color: white;
+    right: 360px;
+    top: 180px;
+}
+
+.forecast_front{
+    font-size: 4em;
+    position: absolute;
+    text-align: right;
+    color: white;
+    right: 360px;
+    top: 330px;
+}
