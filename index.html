@@ -28,13 +28,10 @@
             </div>
         </div>
 
-        <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon">
-            <div class="temp_front degree_symbol">
-                {{current.temp.current}}
-            </div>
-        </div>
-
         <div class="weather_front">
+            <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon">
+                <p class="temp_front degree_symbol">{{current.temp.feelslike}}</p>
+            </div>
             <div class="location_front">
                 {{city}}, {{location.state}}
             </div>
@@ -42,11 +39,7 @@
                 {{current.description_long}}
             </div>
         </div>
-
-        <div class="hourly_header"><h1>Hourly</h1></div>
-        <div class="hourly_high"><h1>High {{forecast[0].max_temp}}</h1></div>
-        <div class="hourly_low"><h1>/ Low {{forecast[0].min_temp}}</h1></div>
-
+        <div class="hourly_header"><h1>Hourly<span class="tab">High <span class="degree_symbol">{{forecast[0].max_temp}}</span> / <span class="hourlyheader2 degree_symbol">Low {{forecast[0].min_temp}}</span></span></h1></div>
         <div class="hourly_forecast">
             <div class="hour">
                 <div class="time">
@@ -120,70 +113,95 @@
             </div>
         </div>
 
-        <div class="daily_header"></div>
+        <div class="daily_header"><h1>Daily Forecast</h1></div>
         <div class="daily_forecast">
             <div class="days">
-                <div class="day1"></div>
-                <div class="dayimg1"></div>
-                <div class="dailyhighlow1"></div>
+                <div class="day">{{forecast[1].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[1].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[1].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[1].min_temp}}</span></h1>
+                </div> 
             </div>
             <div class="days">
-                <div class="day2"></div>
-                <div class="dayimg2"></div>
-                <div class="dailyhighlow2"></div>
+                <div class="day">{{forecast[2].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[2].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[2].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[2].min_temp}}</span></h1>
+                </div> 
             </div>
             <div class="days">
-                <div class="day3"></div>
-                <div class="dayimg3"></div>
-                <div class="dailyhighlow3"></div>
+                <div class="day">{{forecast[3].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[3].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[3].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[3].min_temp}}</span></h1>
+                </div> 
             </div>
             <div class="days">
-                <div class="day4"></div>
-                <div class="dayimg4"></div>
-                <div class="dailyhighlow4"></div>
+                <div class="day">{{forecast[4].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[4].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[4].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[4].min_temp}}</span></h1>
+                </div> 
             </div>
             <div class="days">
-                <div class="day5"></div>
-                <div class="dayimg5"></div>
-                <div class="dailyhighlow5"></div>
+                <div class="day">{{forecast[5].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[5].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[5].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[5].min_temp}}</span></h1>
+                </div> 
             </div>
             <div class="days">
-                <div class="day6"></div>
-                <div class="dayimg6"></div>
-                <div class="dailyhighlow6"></div>
+                <div class="day">{{forecast[6].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[6].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[6].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[6].min_temp}}</span></h1>
+                </div> 
             </div>
             <div class="days">
-                <div class="day7"></div>
-                <div class="dayimg7"></div>
-                <div class="dailyhighlow7"></div>
+                <div class="day">{{forecast[7].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[7].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[7].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[7].min_temp}}</span></h1>
+                </div> 
             </div>
             <div class="days">
-                <div class="day8"></div>
-                <div class="dayimg8"></div>
-                <div class="dailyhighlow8"></div>
+                <div class="day">{{forecast[8].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[8].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[8].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[8].min_temp}}</span></h1>
+                </div> 
             </div>
             <div class="days">
-                <div class="day9"></div>
-                <div class="dayimg9"></div>
-                <div class="dailyhighlow9"></div>
+                <div class="day">{{forecast[9].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[9].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[9].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[9].min_temp}}</span></h1>
+                </div> 
             </div>
             <div class="days">
-                <div class="day10"></div>
-                <div class="dayimg10"></div>
-                <div class="dailyhighlow10"></div>
+                <div class="day">{{forecast[10].weekday}}</div>
+                <div v-bind:class="'icon_'+forecast[10].description_icon" class="icon_daily"></div>
+                <div class="daily_high">
+                    <h1>High <span class="degree_symbol">{{forecast[10].max_temp}}</span><span class="daily_low degree_symbol">/ Low {{forecast[10].min_temp}}</span></h1>
+                </div> 
             </div>
         </div>
 
         <div class="radar">
-            <div class="radarheading"></div>
+            <div class="radarheading"><h1>Radar</h1></div>
             <div class="radarimg"></div>
-            <div class="radarlocation"></div>
+            <div class="radarlocation">{{city}}, {{location.state}} / x={{location.coord.lat}}, y={{location.coord.lon}}</div>
         </div>
 
         <div class="conditions">
-            <div class="conditionheader"></div>
+            <div class="conditionheader"><h1>Conditions</h1></div>
             <div class="conditionbox1">
-                <div class="conditiontext"></div>
+                <div class="conditiontext">
+                    <p class="degree_symbol">Temp : {{current.temp.current}}</p>
+                    <p class="degree_symbol">Feels Like : {{current.temp.feelslike}}</p>
+                    <p></p>
+
+                </div>
             </div>
         </div>
 
