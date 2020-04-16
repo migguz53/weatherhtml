@@ -22,9 +22,9 @@
                 <div class="date">
                     {{time.date}}
                 </div>
-                <div class="search">
-                    <input placeholder="ZIP Code" v-on:input="zip_trigger" name="name" id="zip" />
-                </div>
+                
+                <input placeholder="ZIP Code" v-on:input="zip_trigger" name="name" id="zip" />
+                
             </div>
         </div>
 
@@ -55,7 +55,7 @@
                 <div class="time">
                     {{hourly[2].time}}
                 </div>
-                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                <div v-bind:class="'icon_'+forecast[1].description_icon" class="icon_hourly">
                 </div>
                 <div class="hourtemp degree_symbol">
                     {{hourly[2].temperature}}
@@ -65,7 +65,7 @@
                 <div class="time">
                     {{hourly[3].time}}
                 </div>
-                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                <div v-bind:class="'icon_'+forecast[2].description_icon" class="icon_hourly">
                 </div>
                 <div class="hourtemp degree_symbol">
                     {{hourly[3].temperature}}
@@ -75,7 +75,7 @@
                 <div class="time">
                     {{hourly[4].time}}
                 </div>
-                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                <div v-bind:class="'icon_'+forecast[3].description_icon" class="icon_hourly">
                 </div>
                 <div class="hourtemp degree_symbol">
                     {{hourly[4].temperature}}
@@ -85,27 +85,27 @@
                 <div class="time">
                     {{hourly[5].time}}
                 </div>
-                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                <div v-bind:class="'icon_'+forecast[4].description_icon" class="icon_hourly">
                 </div>
                 <div class="hourtemp degree_symbol">
                     {{hourly[5].temperature}}
                 </div>
             </div>
-            <div class="hour">
+            <div class="hour hidden">
                 <div class="time">
                     {{hourly[6].time}}
                 </div>
-                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                <div v-bind:class="'icon_'+forecast[5].description_icon" class="icon_hourly">
                 </div>
                 <div class="hourtemp degree_symbol">
                     {{hourly[6].temperature}}
                 </div>
             </div>
-            <div class="hour">
+            <div class="hour hidden">
                 <div class="time">
                     {{hourly[7].time}}
                 </div>
-                <div v-bind:class="'icon_'+forecast[0].description_icon" class="icon_hourly">
+                <div v-bind:class="'icon_'+forecast[6].description_icon" class="icon_hourly">
                 </div>
                 <div class="hourtemp degree_symbol">
                     {{hourly[7].temperature}}
@@ -199,19 +199,14 @@
                 <div class="conditiontext">
                     <p class="degree_symbol">Temp : {{current.temp.current}}</p>
                     <p class="degree_symbol">Feels Like : {{current.temp.feelslike}}</p>
+                    <p>Humidity : {{current.humidity}}%</p>
+                    <p>Precipitation : {{forecast[0].precip}}%</p>
+                    <p>UV Index : {{current.uv}}</p>
+                    <p>Air Quality : {{current.air_quality}}</p>
+                    <p>Wind : {{forecast[0].wind_cdir}} {{forecast[0].wind_spd}} mph</p>
+                    <p>Moon : {{forecast[0].moon}}</p>
                 </div>
             </div>
-        </div>
-
-        <div class="moreconditions">
-            <div class="moreconditionheader"></div>
-            <div class="conditionbox2">
-                <div class="moreconditiontext"></div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="copyright"></div>
-            <div class="about"></div>
         </div>
         
     </div>
