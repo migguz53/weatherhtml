@@ -111,6 +111,16 @@
                     {{hourly[7].temperature}}
                 </div>
             </div>
+            <div class="hour hidden hidden2">
+                <div class="time">
+                    {{hourly[8].time}}
+                </div>
+                <div v-bind:class="'icon_'+forecast[7].description_icon" class="icon_hourly">
+                </div>
+                <div class="hourtemp degree_symbol">
+                    {{hourly[8].temperature}}
+                </div>
+            </div>
         </div>
 
         <div class="daily_header"><h1>Daily Forecast</h1></div>

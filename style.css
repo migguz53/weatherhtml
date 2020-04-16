@@ -8,7 +8,11 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-  
+
+.hidden2{
+    display: none;
+}
+
 .icon_01d {
     background-image: url("https://raw.githubusercontent.com/migguz53/weatherhtml/master/weather_icons/01d.png");
     background-repeat: no-repeat;
@@ -263,9 +267,8 @@ select:focus {
 .day{
     color: white;
     font-size: 3.5em;
-    margin-left: 30px;
     padding-top: 15px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 .icon_daily{
@@ -277,9 +280,10 @@ select:focus {
 .daily_high{
     position: relative;
     color: white;
+    padding-top: 10px;
     font-size: 1.1vw;
-    left: 28vw;
-    bottom: 83px;
+    left: 26vw;
+    bottom: 90px;
 }
 
 .daily_low{
@@ -327,6 +331,7 @@ select:focus {
     bottom: 1200px;
     display: grid;
     grid-row: 1fr 2fr;
+    margin-left: 10px;
 }
 
 .conditionheader{
@@ -619,13 +624,17 @@ select:focus {
     body{
         margin: auto;
         padding: 0;
-        background-color: tomato;
+        background-color: black;
     }
     .header{
         background-color: yellow;
         padding: 20px;
     }
     
+    .hidden2{
+        display: initial;
+    }
+
     .banner{
         background-color: lightskyblue;
         display: grid;
@@ -683,7 +692,7 @@ select:focus {
     }    
 
     .icon{
-        width: 90vw;
+        width: 88vw;
         grid-area: big;
     }
     
@@ -693,6 +702,7 @@ select:focus {
         font-size: 7em;
         text-align: left;
         grid-area: text_uno;
+        margin-left: 40px;
     }
 
     .forecast_front{
@@ -701,6 +711,8 @@ select:focus {
         font-size: 4em;
         text-align: left;
         grid-area: text_dos;
+        margin-left: 40px;
+        margin-bottom: -150px;
     }
     
     .temp_front{
@@ -714,11 +726,11 @@ select:focus {
     .hourly_header{
         color: white;
         position: relative;
-        font-size: 2vw;
+        font-size: 4vw;
         font-style: italic;
         margin-left: 30px;
         top: 110px;
-        margin-top: 170px;
+        margin-top: 100px;
         
     }
 
@@ -733,35 +745,32 @@ select:focus {
         bottom: -200px;
         padding-left: 3vw;
         padding-right: 3vw;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row: 1fr 1fr;
+        grid-gap: 10px;
         margin-bottom: -100px;
-        height: 300px;
+        height: 630px;
     }
     
     .tab{
-        position: relative;left: 53vw;
+        position: relative;left: 9vw;
     }
     
-    .hidden{
-        display: none;
-    }
     .hour{
-        margin-top: 25px;
+        margin: 20px 1px -20px 1px;
         background-color: black;
         height: 230px;
-        padding-top: 20px;
     }
     
     .time{
-        font-size: 4vw;
+        font-size: 6vw;
         margin: auto;
         color: white;
         text-align: center;
     }
     
     .hourtemp{
-        font-size: 3em;
+        font-size: 3.2em;
         margin: auto;
         color: white;
         text-align: center;
@@ -790,40 +799,43 @@ select:focus {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 25px;
-         
+        
+        margin: auto;
         margin-top: 250px;
-        margin-left: 30px;
+    
         padding: 120px 30px 10px 30px;
     
-        width: 85vw;
+        width: 72vw;
     }
     
     .days{
         background-color: black;
-        height: 90px;
+        height: 270px;
         padding-right: 30px;
     }
     
     .day{
         color: white;
         font-size: 3.5em;
-        margin-left: 30px;
+        margin-left: -30px;
         padding-top: 15px;
         padding-left: 50px;
+        text-align: center;
     }
     
     .icon_daily{
         width: 100%;
         height: 70px;
-        margin-top: -70px;
+        margin-top: 10px;
+        margin-left: 10px;
     }
     
     .daily_high{
         position: relative;
         color: white;
-        font-size: 2vw;
-        left: 54vw;
-        bottom: 83px;
+        font-size: 4vw;
+        left: 8vw;
+        bottom: 10px;
     }
     
     .daily_low{
@@ -831,13 +843,14 @@ select:focus {
     }
     
     .radar{
+        margin: auto;
         background-color: white;
         display: grid;
         grid-template-rows: .5fr 2.5fr .5fr;
         position: relative;
         bottom: -50px;
         left: 0px;
-        width: 91vw;
+        width: 82vw;
     }
     
     .radarheading{
@@ -863,11 +876,12 @@ select:focus {
     }
     
     .conditions{
+        margin: auto;
         background-color: lightskyblue;
         position: relative;
-        left: 30px;
+        left: 0px;
         bottom: -100px;
-        width: 91vw;
+        width: 82vw;
         display: grid;
         grid-row: 1fr 2fr;
     }
@@ -890,7 +904,7 @@ select:focus {
     
     .conditiontext{
         color: white;
-        font-size: 4vw;
+        font-size: 5vw;
         text-align: center;
         line-height: 34px;
     }
